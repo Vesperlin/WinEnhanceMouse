@@ -1,0 +1,30 @@
+{
+  "modes": [
+    {
+      "name": "默认模式",
+      "bindings": {
+        "primary_queue": [
+          {"id": "open_browser", "label": "打开浏览器"},
+          {"id": "toggle_play_pause", "label": "播放/暂停"}
+        ],
+        "secondary_queue": [
+          {"id": "open_settings", "label": "打开设置"}
+        ]
+      }
+    }
+  ],
+  "menu": {
+    "position": "bottom_right",
+    "width": 320,
+    "row_height": 40,
+    "font_size": 14
+  },
+  "ai": {
+    "enabled": false,
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "api_key": "",
+    "system_prompt": "你是 Windows 增强鼠标助手，帮助用户进行高效操作。",
+    "allow_code_execution": false
+  }
+}
