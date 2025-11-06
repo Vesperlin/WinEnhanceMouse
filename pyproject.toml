@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "winenhancemouse"
+version = "0.1.0"
+description = "Windows 11 customizable middle-click menu and macro system"
+authors = [{name = "WinEnhanceMouse"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pynput>=1.7.6",
+    "pyautogui>=0.9.54",
+    "pyperclip>=1.8.2",
+    "openai>=1.14.0",
+    "pillow>=10.0.0",
+    "psutil>=5.9.0"
+]
+
+[project.scripts]
+winenhancemouse = "winenhancemouse.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["winenhancemouse*"]
